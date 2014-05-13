@@ -1,0 +1,56 @@
+/* Sets the font family of the document */
+body {
+  font-family: Helvetica;
+}
+
+/* Sets a rounded border around the tooltips and adds padding making them easier to read. Display: none; is set to hide the tooltips by default. */
+.tooltip {
+  border: 1px solid;
+  border-radius: 5px;
+  width: 300px;
+  padding: 3px;
+  display: none;
+}
+
+/* Sets a bottom margin beneat the input fields for spacing/styling */
+.input_field {
+  margin-bottom: 5px;
+}
+
+/* Changes the display value of div elements with a class of 'tooltip' from none to block when input fields are in focus */
+input:focus + div.tooltip {
+  display: block;
+}
+
+/* Changes the display value of div elements with a class of 'tooltip' from none to block when input fields are hovered */
+input:hover + div.tooltip {
+  display: block;
+}
+
+/* Changes the display value of div elements with a class of 'tooltip' from none to block when links are in focus */
+a.link_with_tooltip:focus + div.tooltip {
+  display: block;
+}
+
+/* Changes the display value of div elements with a class of 'tooltip' from none to block when links are hovered */
+a.link_with_tooltip:hover + div.tooltip {
+  display: block;
+}
+
+/* Changes the display value of div elements with a class of 'tooltip' from none to block when the question_mark_icon div is hovered */
+div.question_mark_icon:focus + div.tooltip {
+  display:block;
+}
+
+/* Changes the display value of div elements with a class of 'tooltip' from none to block when the question_mark_icon div is hovered */
+div.question_mark_icon:hover + div.tooltip {
+  display:block;
+}
+
+/* Places a rounded border around the question mark to make it look more like an icon/buttn */
+.question_mark_icon {
+  border: 1px solid;
+  border-radius:25px;
+  padding-left: 4px;
+  width: 12px;
+}

@@ -1,0 +1,31 @@
+<html lang="en">
+	<head>
+		<title>ARIA Tooltip Example</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<script type="text/javascript">
+      // No JavaScript required
+		</script>
+	</head>
+  <body>
+    <form>
+    	<h1>Example Form</h1>
+        <div class="input_field">
+          <label for="field1">Field 1</label>
+          <input type="text" id="username" aria-describedby="field1-tooltip">
+          <div role="tooltip" class="tooltip" id="field1-tooltip">This is the tooltip for field 1.</div>
+        </div>
+        <div class="input_field">
+          <label for="field2">Field 2</label>
+          <input type="text" id="password" aria-describedby="field2-tooltip">
+          <div role="tooltip" class="tooltip" id="field2-tooltip">This is the tooltip for field 2.</div>
+        </div>
+        <a href="#" class="link_with_tooltip">Sample Link</a>
+        <div role="tooltip" class="tooltip" id="link-tooltip">This is a sample link tooltip.</div>
+        <!-- This div has a tabindex value to ensure that it can receive focus using the keyboard.-->
+        <div class="question_mark_icon" tabindex="0">
+        	?
+        </div>
+        <div role="tooltip" class="tooltip" id="icon-tooltip">This is the tooltip for the simulated question mark icon.</div>
+    </form>
+  </body>
+</html>
